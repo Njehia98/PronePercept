@@ -1,0 +1,166 @@
+﻿
+.btn {
+  float: right;
+  display: block;
+  color: #ffffff;
+  padding: 5px 17px 6px;
+  background-color: #00b1ba;
+   -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  
+}
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+h3 {
+	line-height:40px;
+	font-size:27px;
+	font-weight:100;
+}
+input[type=range] {
+	/*removes default webkit styles*/
+	-webkit-appearance: none;
+	/*fix for FF unable to apply focus style bug */
+	border: 1px solid white;
+	/*required for proper track sizing in FF*/
+	width: 190px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+ width: 190px;
+ height: 5px;
+ background: grey;
+ border: none;
+ border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ border: none;
+ height: 16px;
+ width: 16px;
+ border-radius: 50%;
+ background: goldenrod;
+ margin-top: -4px;
+}
+input[type=range]:focus {
+	outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+ background: grey;
+}
+ input[type=range]::-moz-range-track {
+ width: 190px;
+ height: 5px;
+ background: #grey;
+ border: none;
+ border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+ border: none;
+ height: 16px;
+ width: 16px;
+ border-radius: 50%;
+ background: goldenrod;
+}
+
+
+input[type=range]:-moz-focusring {
+ outline: 1px solid grey;
+ outline-offset: -1px;
+}
+}
+input[type=range]::-ms-fill-lower {
+ background: grey;
+ border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+ background: grey;
+ border-radius: 20px;
+}
+input[type=range]::-ms-thumb {
+ border: none;
+ height: 16px;
+ width: px;
+ border-radius: 50%;
+ background: grey;
+}
+input[type=range]:focus::-ms-fill-lower {
+ background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+ background: grey;
+}
+label {
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  margin-left:20px;
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2em;
+	text-indent: 3.25em;
+	margin-top: 2em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #9CE2AE;
+	background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+	color: #777;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
+
+
+
+
+
+
